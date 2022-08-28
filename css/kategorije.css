@@ -1,0 +1,117 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One'); */
+/* @import url('https://fonts.googleapis.com/css?family=Work+Sans'); */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Fredoka One', cursive; */
+	/* font-family: 'Ek Mukta', sans-serif; */
+	font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-width: 50vh; */
+    /* min-height: 90vh; */
+    /* min-height: 100vh; */
+    /* background-color: #3b2a27; */
+    /* border: 1px solid blue; */
+    margin-bottom: 5rem;
+}
+
+.container ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    padding-top: 0.5em;
+    /* gap: 30px; */
+    /* gap: 10px; */
+    /* width: 100%; */
+    /* border: 1px solid red; */
+}
+
+.container ul li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 0.3em;
+    display: flex;
+    /* border: 1px solid blue; */
+}
+
+.container ul li a{
+    position: relative;
+    /* font-size: 2em; */
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    /* color: #fff; */
+    -webkit-text-stroke: 1px rgba(225, 225, 225, 0.5);
+    padding-left: 10px;  /* icon size + space */
+    /* border: 1px solid green; */
+}
+
+
+
+.category-logo {
+    max-width: 25px;
+    margin: 0 !important;
+    bottom: 0.2em;
+    /* border: 1px dashed red; */
+}
+
+/* @media (max-width: 600px) {
+    .container ul {
+        background-color: yellow;
+    }
+} */
+
+@media (min-width: 768px) and (max-width: 2000px){
+    .container ul li a {
+        font-size: 2em;
+        line-height: 1.3em;
+    }
+
+    .container ul {
+        padding-top: 2em;
+    }
+}
+
+@media (min-width: 2000px){
+    .container ul li a {
+        font-size: 2.2em;
+        line-height: 1.4em;
+    }
+
+    .container ul {
+        padding-top: 10em;
+    }
+}
+
+@media (min-width: 295px){
+    .container ul li a::before{
+        content: attr(data-text);
+        position: absolute;
+        /* color: transparent; */
+        /* color: var(--clr); */
+        /* color: #fff; */
+        width: 0;
+        overflow: hidden;
+        transition: 1s;
+        /* border-right: 8px solid var(--clr); */
+        -webkit-text-stroke: 1px var(--clr);
+        /* border: 1px dashed green; */
+    }
+    
+    .container ul li a:hover::before{
+        width: 100%;
+        filter: drop-shadow(0 0 25px var(--clr));
+        /* border: 1px dashed blue; */
+    }
+}
