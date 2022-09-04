@@ -73,11 +73,20 @@ li img {
     /* bottom: 0.2em; */
 }
 
-/* @media (max-width: 600px) {
-    .container ul {
+@media (max-width: 600px) {
+    /* .container ul {
         background-color: yellow;
+    } */
+    .container ul li {
+        max-height: 25px;
+        /* background-color: red; */
     }
-} */
+
+    .category-logo {
+        max-height: 25px;
+        /* background-color: red; */
+    }
+}
 
 @media (min-width: 768px) and (max-width: 2000px){
     .container ul li a {
