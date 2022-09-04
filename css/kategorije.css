@@ -57,7 +57,12 @@
     /* border: 1px solid green; */
 }
 
-
+li img {
+    min-width: 25px;
+    min-height: 25px;
+    width: 25px;
+    height: 25px;
+}
 
 .category-logo {
     max-width: 25px;
