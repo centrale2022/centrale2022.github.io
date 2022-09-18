@@ -1,0 +1,11 @@
+.kolac-slika {
+    width: 100% !important;
+    border-radius: 10px;
+    aspect-ratio: 3 / 2;
+    max-width: 1200;
+    max-height: 600;
+}
+
+.inline-liter {
+    padding-right: 1em;
+}
