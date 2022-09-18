@@ -8,4 +8,15 @@
 
 .inline-liter {
     padding-right: 1em;
+    text-align: left;
+}
+
+.first {
+    margin-bottom: 0 !important;
+    text-align: left;
+}
+.connected {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    text-align: left;
 }
